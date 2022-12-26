@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.nav{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(22, 21, 21);
+}
+
+.nav-icons{
+  width: 50%;
+}
+
+.nav-icons img{
+  width: 130px;
+  margin-left: 12px;
+}
+
+.nav-text{
+  width: 50%;
+  color: white;
+}
+
+.nav-text h1{
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 10px;
+}
+
+.nav-separator{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 12px;
+}
+
+.nav-separator p{
+  margin-top: 20px;
+  font-size: 20px;
+  text-shadow: 1px 1px 10px;
+}
+
+.contain{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url('./IMG/RickAndMorty.gif');
+  
+}
+
+.contain-input{
+  width: 100%;
+}
+
+.contain-input input{
+  width: 300px;
+  height: 30px;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  box-shadow: 1px 1px 10px;
+}
+
+.contain-input button{
+  width: 70px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 10px;
+}
+
+.cards{
+  width: 100%;
+  height: auto;
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
+.residents{
+  margin-top: 12px;
+  text-shadow: 1px 1px 10px;
+}
+
+.cards-info{
+  width: 300px;
+  height: 300px;
+  margin-left: 60px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 10px;
+}
+
+.cardsRicks{
+  border-radius: 12px;
+}
+.cardsRicks:hover{
+  background-color: cadetblue;
+}
+.cardsRicks img{
+  width: 200px;
+  height: auto;
+  margin-top: 12px;
+  border-radius: 12px;
+}
+
+.cardsRicks h1{
+  font-size: 20px;
+  text-shadow: 1px 1px 10px;
+}
+.cardsRicks p{
+  font-size: 15px;
+  text-shadow: 1px 1px 10px;
+}
+
