@@ -8,7 +8,7 @@ body{
   background-image: url('./IMG/RickAndMorty.gif');
   background-position: 100%;
   background-repeat: round;
-  position: fixed;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
