@@ -5,7 +5,7 @@ const RickList = ({ url }) => {
   const [info, setInfo] = useState({});
   const [color, setColor] = useState("");
   useEffect(() => {
-    if (info) {
+    if (info !=null || info !=0) {
       axios.get(url).then((res) => {
         setInfo(res.data), setColor(Colors[res.data.type]);
       });

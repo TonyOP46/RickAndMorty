@@ -7,7 +7,7 @@ const Rick = () => {
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    const ramdon = Math.floor(Math.random()*126)+1
+    const ramdon = Math.floor(Math.random()*127)+1
     axios
       .get(`https://rickandmortyapi.com/api/location/${ramdon}`)
       .then((res) => setRicks(res.data));
@@ -16,12 +16,14 @@ const Rick = () => {
     // console.log(ricks);
 
   const Search = () => {
-    if (input) {
+    if (input!=null && input!=0) {
       axios
       .get(`https://rickandmortyapi.com/api/location/${input}`)
       .then((res) => setRicks(res.data));
+    }else{
+      alert("Please! You must not leave the field empty, at least you must write a number mayor that 0")
     }
-  };
+    }
   //   console.log(input);
   return (
     <div className="contain">
